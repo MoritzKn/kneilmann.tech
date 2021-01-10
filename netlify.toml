@@ -1,0 +1,9 @@
+[build]
+publish = "dist"
+command = "ls dist"
+
+[[headers]]
+for = "/**.(css|jpg|png)"
+
+[headers.values]
+Cache-Control = "max-age=31104000"

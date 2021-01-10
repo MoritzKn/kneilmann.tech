@@ -1,0 +1,59 @@
+@import "src/definitions.scss";
+
+body {
+  margin: 20px;
+  max-width: $content-width;
+
+  @media screen and (min-width: $breakpoint__720) {
+    margin: $base-space__l * 2;
+  }
+
+  @media screen and (min-width: $breakpoint__1600) {
+    margin: $base-space__xl * 2;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    margin-left: 24px;
+  }
+
+  p ~ ul {
+    margin-top: -0.5em;
+  }
+
+  li {
+    list-style: circle;
+  }
+}
+
+.text-container {
+  max-width: 620px;
+}
+
+a {
+  text-decoration: none;
+  color: #11f;
+}
+
+h2 {
+  font-size: 1.1em;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}

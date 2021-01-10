@@ -1,0 +1,39 @@
+$base-space: 12px;
+$base-space__m: $base-space * 2;
+$base-space__l: $base-space * 3;
+$base-space__xl: $base-space * 4;
+
+$breakpoint__321: 321px;
+$breakpoint__520: 520px;
+$breakpoint__720: 720px;
+$breakpoint__1200: 1200px;
+$breakpoint__1600: 1600px;
+$breakpoint__1920: 1920px;
+
+$content-width: 1200px;
+
+$font-family: "Quicksand", sans-serif;
+
+@mixin text-style__title {
+  // font-family: $font-family;
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 37px;
+
+  @media screen and (min-width: $breakpoint__720) {
+    font-size: 55px;
+    line-height: 62px;
+  }
+
+  @media screen and (min-width: $breakpoint__1600) {
+    font-size: 65px;
+    line-height: 74px;
+  }
+}
+
+@mixin text-style__copy {
+  // font-family: $font-family;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 26px;
+}

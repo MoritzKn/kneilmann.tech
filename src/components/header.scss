@@ -1,0 +1,14 @@
+@import "src/definitions.scss";
+
+.header__title {
+  @include text-style__title;
+
+  margin: $base-space 0;
+  @media screen and (min-width: $breakpoint__720) {
+    margin: $base-space__m 0;
+  }
+
+  @media screen and (min-width: $breakpoint__1600) {
+    margin: $base-space__l 0;
+  }
+}
