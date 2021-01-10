@@ -20,8 +20,6 @@ class ScssLoader {
   async load(ctx, dirName, filePath, important) {
     const fullPath = path.join(dirName, filePath);
 
-    console.log("load", filePath, important);
-
     if (!this.files[fullPath]) {
       this.files[fullPath] = {
         source: fullPath,
@@ -56,7 +54,6 @@ class ScssLoader {
   }
 
   async dump(dir) {
-    console.log(this.files);
     const scssResults = await Promise.all(
       Object.values(this.files)
         .filter(f => !f.important)
