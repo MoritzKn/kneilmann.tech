@@ -1,7 +1,7 @@
 @import "src/definitions.scss";
 
 body {
-  margin: 20px;
+  margin: $base-space__m;
   max-width: $content-width;
 
   @media screen and (min-width: $breakpoint__720) {
@@ -16,6 +16,10 @@ body {
 main {
   display: flex;
   flex-direction: column;
+}
+
+.text-container {
+  max-width: 620px;
 
   ul {
     margin-left: 24px;
@@ -28,10 +32,18 @@ main {
   li {
     list-style: circle;
   }
+
+  p,
+  ul,
+  ol {
+    margin-top: $block-margin 0;
+    margin-bottom: $block-margin 0;
+  }
 }
 
-.text-container {
-  max-width: 620px;
+.text-container__space {
+  display: block;
+  height: 1px;
 }
 
 a {

@@ -1,24 +1,14 @@
 @import "src/definitions.scss";
 
 .footer {
-  @media screen and (min-width: $breakpoint__720) {
-    padding-top: $base-space__l * 1;
-  }
-
-  @media screen and (min-width: $breakpoint__1600) {
-    padding-top: $base-space__xl * 1;
-  }
-
   &::before {
     content: "--";
     display: block;
-    padding-bottom: 12px;
   }
 }
 
 .footer__nav {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  margin: $block-margin 0;
 }
 
 .footer__list {

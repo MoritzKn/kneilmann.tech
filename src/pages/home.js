@@ -8,7 +8,8 @@ module.exports = async function about(ctx) {
   return doc(
     ctx,
     {
-      title: "Moritz Kneilmann"
+      title: "Moritz Kneilmann",
+      description: "Freelance Cloud and Web Consultant from Cologne, Germany"
     },
     html`
       ${header(ctx)}
@@ -49,8 +50,6 @@ module.exports = async function about(ctx) {
             <li>Vue.js</li>
           </ul>
 
-          <br />
-
           <p>
             If you think I could help you with my skills,
             <b>let's get in touch!</b>
@@ -60,8 +59,6 @@ module.exports = async function about(ctx) {
             Send me an email:
             <a href="mailto:hi@kneilmann.tech">hi@kneilmann.tech</a>
           </p>
-
-          <br />
 
           <p>
             You can also find me on
