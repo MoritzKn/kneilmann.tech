@@ -31,7 +31,7 @@ class InlineJsLoader {
 
     if (!this.files[fullPath].pages.includes(ctx.state.path)) {
       ctx.state.pageData.bodyInsert = `<script type="application/javascript">${this.files[fullPath].result}</script>`;
-      this.files[fullPath].pages.push(ctx.state.path)
+      this.files[fullPath].pages.push(ctx.state.path);
     }
   }
 }

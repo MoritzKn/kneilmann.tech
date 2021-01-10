@@ -15,7 +15,7 @@ module.exports = async function impressum(ctx) {
       ${header(ctx)}
 
       <main>
-        <div class="text-container">
+        <div class="text">
           <h1>Datenschutzerklärung</h1>
 
           <h2>Allgemeiner Hinweis und Pflichtinformationen</h2>

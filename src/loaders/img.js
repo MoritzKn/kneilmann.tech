@@ -1,34 +1,15 @@
-const util = require("util");
 const fs = require("fs");
 const path = require("path");
-const crypto = require("crypto");
+const util = require("util");
 
 const mkdirp = require("mkdirp");
 const sharp = require("sharp");
 const sizeOf = util.promisify(require("image-size"));
 
+const hash = require("../hash");
+
 const copyFile = util.promisify(fs.copyFile);
 const stat = util.promisify(fs.stat);
-
-function fileHash(filePath) {
-  return new Promise((resolve, reject) => {
-    const shasum = crypto.createHash("sha1");
-
-    const s = fs.ReadStream(filePath);
-    s.on("data", data => {
-      shasum.update(data);
-    });
-
-    s.on("error", error => {
-      reject(error);
-    });
-
-    s.on("end", () => {
-      const hash = shasum.digest("hex");
-      resolve(hash.slice(0, 8));
-    });
-  });
-}
 
 function limit(orgWidth, orgHeight, maxWidth, maxHeight = Infinity) {
   let width = orgWidth;
@@ -108,10 +89,9 @@ class ImgLoader {
       const { width: orgWidth, height: orgHeight, type } = await sizeOf(
         fullPath
       );
-      const hash = await fileHash(fullPath);
       const outputPrefix = path.join(
         "/img",
-        `${path.parse(filePath).name}_${hash}`
+        `${path.parse(filePath).name}_${await hash.file(fullPath)}`
       );
 
       const { width, height } = limit(

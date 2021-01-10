@@ -15,7 +15,7 @@ module.exports = async function about(ctx) {
       ${header(ctx)}
 
       <main>
-        <div class="text-container">
+        <div class="text">
           <h2>Hi there!</h2>
 
           <p>

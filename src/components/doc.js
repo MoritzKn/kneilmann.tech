@@ -3,7 +3,7 @@ const html = require("../html");
 const URL_ORIGIN = "https://kneilmann.tech";
 
 module.exports = async function doc(ctx, props, slot) {
-  await ctx.load("scss", __dirname, "./global.scss");
+  await ctx.load("scss", __dirname, "./global.scss", true);
   const icon = await ctx.load("img", __dirname, "../favicon.png", {
     width: 128
   });

@@ -71,7 +71,8 @@ class Context {
     this.state = null;
   }
 
-  async dump(dir) {
+  async export(dir) {
+    // 1. finish all loaders
     await Promise.all(
       Object.values(this.loaders)
         .filter(loader => loader.finish)
@@ -100,6 +101,8 @@ class Context {
       sortClassName: true
     };
 
+    // 2. export html pages
+
     await Promise.all(
       Object.values(this.pages).map(async page => {
         let { html } = page;
@@ -116,6 +119,8 @@ class Context {
         await writeFile(outPath, html, "utf8");
       })
     );
+
+    // 3. dump internal loader state
 
     await Promise.all(
       Object.values(this.loaders)
@@ -139,7 +144,7 @@ async function main() {
   await ctx.renderPage("/impressum/", impressumPage);
   await ctx.renderPage("/datenschutz/", datenschutzPage);
 
-  await ctx.dump(path.join(__dirname, "../dist"));
+  await ctx.export(path.join(__dirname, "../dist"));
 }
 
 main().catch(e => console.error(e));

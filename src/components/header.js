@@ -1,7 +1,7 @@
 const html = require("../html");
 
 module.exports = async function header(ctx) {
-  await ctx.load("scss", __dirname, "header.scss");
+  await ctx.load("scss", __dirname, "header.scss", true);
 
   return html`
     <header class="header">

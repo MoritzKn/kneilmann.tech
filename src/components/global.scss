@@ -18,7 +18,7 @@ main {
   flex-direction: column;
 }
 
-.text-container {
+.text {
   max-width: 620px;
 
   ul {
@@ -41,7 +41,7 @@ main {
   }
 }
 
-.text-container__space {
+.text__space {
   display: block;
   height: 1px;
 }
