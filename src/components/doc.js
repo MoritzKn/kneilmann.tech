@@ -41,11 +41,6 @@ module.exports = async function doc(ctx, props, slot) {
           crossorigin
         />
 
-        <!-- <meta
-          name="google-site-verification"
-          content="XHhoBOzy1hnLO61tpRIwx9MOoX965H_GzwZy8U76dfo"
-        /> -->
-
         <style>
           @font-face {
             font-family: "Quicksand";
@@ -63,6 +58,20 @@ module.exports = async function doc(ctx, props, slot) {
             font-family: "Quicksand", sans-serif;
           }
         </style>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FKW0VX8ESD"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag("js", new Date());
+          gtag("config", "G-FKW0VX8ESD", { anonymize_ip: true });
+        </script>
 
         <!-- HEAD_INSERT_POINT -->
       </head>

@@ -12,6 +12,7 @@ const ScssLoader = require("./loaders/scss");
 
 const homePage = require("./pages/home");
 const impressumPage = require("./pages/impressum");
+const datenschutzPage = require("./pages/datenschutz");
 
 const writeFile = util.promisify(fs.writeFile);
 
@@ -136,6 +137,7 @@ async function main() {
 
   await ctx.renderPage("/", homePage);
   await ctx.renderPage("/impressum/", impressumPage);
+  await ctx.renderPage("/datenschutz/", datenschutzPage);
 
   await ctx.dump(path.join(__dirname, "../dist"));
 }

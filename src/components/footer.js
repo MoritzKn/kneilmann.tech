@@ -10,6 +10,9 @@ module.exports = async function footer(ctx) {
           <li class="footer__item">
             <a href="/impressum/">Impressum</a>
           </li>
+          <li class="footer__item">
+            <a href="/datenschutz/">Datenschutz</a>
+          </li>
         </ul>
       </nav>
 
