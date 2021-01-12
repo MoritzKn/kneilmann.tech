@@ -1,7 +1,7 @@
 const html = require("../html");
 
 module.exports = async function footer(ctx) {
-  await ctx.load("scss", __dirname, "footer.scss");
+  await ctx.load("scss", __dirname, "footer.scss", true);
 
   return html`
     <footer class="footer">

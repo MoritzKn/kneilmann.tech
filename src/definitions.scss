@@ -14,17 +14,18 @@ $breakpoint__1920: 1920px;
 
 $content-width: 1200px;
 
-$font-family: "Quicksand", sans-serif;
+$font-family__text: "Raleway", sans-serif;
+$font-family__title: "Quicksand", sans-serif;
 
 @mixin text-style__title {
-  // font-family: $font-family;
+  font-family: $font-family__title;
   font-weight: 300;
-  font-size: 33px;
-  line-height: 37px;
+  font-size: 32px;
+  line-height: 35px;
 
   @media screen and (min-width: $breakpoint__720) {
-    font-size: 55px;
-    line-height: 62px;
+    font-size: 52px;
+    line-height: 60px;
   }
 
   @media screen and (min-width: $breakpoint__1600) {
@@ -34,8 +35,15 @@ $font-family: "Quicksand", sans-serif;
 }
 
 @mixin text-style__copy {
-  // font-family: $font-family;
+  font-family: $font-family__text;
   font-weight: 300;
   font-size: 19px;
   line-height: 26px;
+}
+
+@mixin text-style__main-text {
+  font-family: $font-family__text;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
 }

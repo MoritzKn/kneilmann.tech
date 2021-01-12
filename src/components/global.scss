@@ -1,15 +1,15 @@
 @import "src/definitions.scss";
 
 body {
-  margin: $base-space__m;
+  margin: $base-space * 2;
   max-width: $content-width;
 
   @media screen and (min-width: $breakpoint__720) {
-    margin: $base-space__l * 2;
+    margin: $base-space * 4 $base-space * 6;
   }
 
   @media screen and (min-width: $breakpoint__1600) {
-    margin: $base-space__xl * 2;
+    margin: $base-space * 8 $base-space * 10;
   }
 }
 
@@ -20,6 +20,7 @@ main {
 
 .text {
   max-width: 620px;
+  @include text-style__main-text;
 
   ul {
     margin-left: 24px;

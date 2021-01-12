@@ -5,7 +5,7 @@ module.exports = async function header(ctx) {
 
   return html`
     <header class="header">
-      <h1 class="header__title">kneilmann.tech</h1>
+      <h1 class="header__title"><a href="/">kneilmann.tech</a></h1>
 
       ${ctx.state.path !== "/" &&
         html`

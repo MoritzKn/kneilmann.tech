@@ -17,6 +17,10 @@ class ScssLoader {
     this.bundlePath = null;
   }
 
+  getCssFilesToBundle() {
+    return Object.values(this.files).filter(f => !f.important);
+  }
+
   async load(ctx, dirName, filePath, important) {
     const fullPath = path.join(dirName, filePath);
 
@@ -30,14 +34,16 @@ class ScssLoader {
   }
 
   async finish(ctx) {
-    const allHashes = Object.values(this.files)
-      .filter(f => !f.important)
-      .map(f => f.hash)
-      .sort()
-      .join();
+    const filesToBundle = this.getCssFilesToBundle();
+    if (filesToBundle.length !== 0) {
+      const allHashes = filesToBundle
+        .map(f => f.hash)
+        .sort()
+        .join();
 
-    this.bundlePath = `/css/styles_${hash.string(allHashes)}.css`;
-    ctx.headInsert += `<link rel="stylesheet" href="${this.bundlePath}">\n`;
+      this.bundlePath = `/css/styles_${hash.string(allHashes)}.css`;
+      ctx.headInsert += `<link rel="stylesheet" href="${this.bundlePath}">\n`;
+    }
 
     // inline css, this is gonna be for all pages!
 
@@ -54,10 +60,14 @@ class ScssLoader {
   }
 
   async dump(dir) {
+    const filesToBundle = this.getCssFilesToBundle();
+
+    if (filesToBundle.length === 0) {
+      return;
+    }
+
     const scssResults = await Promise.all(
-      Object.values(this.files)
-        .filter(f => !f.important)
-        .map(file => renderSass({ file: file.source }))
+      filesToBundle.map(file => renderSass({ file: file.source }))
     );
 
     const styleSheets = scssResults.map(r => r.css).join("\n\n");
