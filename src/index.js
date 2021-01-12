@@ -9,6 +9,7 @@ const FileLoader = require("./loaders/file");
 const ImgLoader = require("./loaders/img");
 const InlineJsLoader = require("./loaders/inline-js");
 const ScssLoader = require("./loaders/scss");
+const GoogleFontLoader = require("./loaders/font");
 
 const homePage = require("./pages/home");
 const impressumPage = require("./pages/impressum");
@@ -138,6 +139,7 @@ async function main() {
   ctx.addLoader("file", new FileLoader());
   ctx.addLoader("img", new ImgLoader());
   ctx.addLoader("inline-js", new InlineJsLoader());
+  ctx.addLoader("font", new GoogleFontLoader());
   ctx.addLoader("scss", new ScssLoader());
 
   await ctx.renderPage("/", homePage);

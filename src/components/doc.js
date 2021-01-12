@@ -8,6 +8,9 @@ module.exports = async function doc(ctx, props, slot) {
     width: 128
   });
 
+  await ctx.load("font", __dirname, "Raleway", { weights: [400, 700] });
+  await ctx.load("font", __dirname, "Quicksand", { weights: [400, 700] });
+
   return html`
     <!DOCTYPE html>
     <html lang="en">
@@ -34,62 +37,6 @@ module.exports = async function doc(ctx, props, slot) {
         <link rel="icon" href="${icon.path}" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-
-        <!--
-        NOTE: inlined version of
-        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
-        -->
-
-        <style>
-          /* latin */
-          @font-face {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/quicksand/v21/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2)
-              format("woff2");
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-              U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-              U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-          /* latin */
-          @font-face {
-            font-family: "Quicksand";
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/quicksand/v21/6xKtdSZaM9iE8KbpRA_hK1QNYuDyPw.woff2)
-              format("woff2");
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-              U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-              U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-          /* latin */
-          @font-face {
-            font-family: "Raleway";
-            font-style: normal;
-            font-weight: 400;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2)
-              format("woff2");
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-              U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-              U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-          /* latin */
-          @font-face {
-            font-family: "Raleway";
-            font-style: normal;
-            font-weight: 700;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/raleway/v18/1Ptug8zYS_SKggPNyC0IT4ttDfA.woff2)
-              format("woff2");
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-              U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-              U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-        </style>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
