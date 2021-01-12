@@ -16,14 +16,14 @@ module.exports = async function impressum(ctx) {
 
       <main>
         <div class="text">
-          <h1>Datenschutzerklärung</h1>
+          <h1>Datenschutz&shy;erklärung</h1>
 
-          <h2>Allgemeiner Hinweis und Pflichtinformationen</h2>
+          <h2>Allgemeiner Hinweis und Pflicht&shy;infor&shy;ma&shytionen</h2>
 
           <h3>Benennung der verantwortlichen Stelle</h3>
 
           <p>
-            Die verantwortliche Stelle für die Datenverarbeitung auf dieser
+            Die verantwortliche Stelle für die Daten&shy;verarbeitung auf dieser
             Website ist:
           </p>
           <p>
@@ -38,43 +38,48 @@ module.exports = async function impressum(ctx) {
             personenbezogenen Daten (z.B. Namen, Kontaktdaten o. Ä.).
           </p>
 
-          <h3>Widerruf Ihrer Einwilligung zur Datenverarbeitung</h3>
+          <h3>Widerruf Ihrer Einwilligung zur Daten&shy;verarbeitung</h3>
 
           <p>
             Nur mit Ihrer ausdrücklichen Einwilligung sind einige Vorgänge der
-            Datenverarbeitung möglich. Ein Widerruf Ihrer bereits erteilten
+            Daten&shy;verarbeitung möglich. Ein Widerruf Ihrer bereits erteilten
             Einwilligung ist jederzeit möglich. Für den Widerruf genügt eine
             formlose Mitteilung per E-Mail. Die Rechtmäßigkeit der bis zum
-            Widerruf erfolgten Datenverarbeitung bleibt vom Widerruf unberührt.
+            Widerruf erfolgten Daten&shy;verarbeitung bleibt vom Widerruf
+            unberührt.
           </p>
 
-          <h3>Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde</h3>
+          <h3>
+            Recht auf Beschwerde bei der zuständigen Aufsichts&shy;behörde
+          </h3>
 
           <p>
             Als Betroffener steht Ihnen im Falle eines datenschutzrechtlichen
-            Verstoßes ein Beschwerderecht bei der zuständigen Aufsichtsbehörde
-            zu. Zuständige Aufsichtsbehörde bezüglich datenschutzrechtlicher
-            Fragen ist der Landesdatenschutzbeauftragte des Bundeslandes, in dem
-            sich der Sitz unseres Unternehmens befindet. Der folgende Link
-            stellt eine Liste der Datenschutzbeauftragten sowie deren
-            Kontaktdaten bereit:
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
-              >https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html</a
-            >.
+            Verstoßes ein Beschwerderecht bei der zuständigen
+            Aufsichts&shy;behörde zu. Zuständige Aufsichts&shy;behörde bezüglich
+            datenschutzrechtlicher Fragen ist der Landesdatenschutzbeauftragte
+            des Bundeslandes, in dem sich der Sitz unseres Unternehmens
+            befindet. Der folgende Link stellt eine Liste der
+            Datenschutzbeauftragten sowie deren Kontaktdaten bereit:
           </p>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
+          >
+            https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html
+          </a>
 
-          <h3>Recht auf Datenübertragbarkeit</h3>
+          <h3>Recht auf Daten&shy;übertragbarkeit</h3>
 
           <p>
             Ihnen steht das Recht zu, Daten, die wir auf Grundlage Ihrer
             Einwilligung oder in Erfüllung eines Vertrags automatisiert
             verarbeiten, an sich oder an Dritte aushändigen zu lassen. Die
             Bereitstellung erfolgt in einem maschinenlesbaren Format. Sofern Sie
-            die direkte Übertragung der Daten an einen anderen Verantwortlichen
-            verlangen, erfolgt dies nur, soweit es technisch machbar ist.
+            die direkte Über&shy;tragung der Daten an einen anderen
+            Verantwortlichen verlangen, erfolgt dies nur, soweit es technisch
+            machbar ist.
           </p>
 
           <h3>Recht auf Auskunft, Berichtigung, Sperrung, Löschung</h3>
@@ -83,22 +88,22 @@ module.exports = async function impressum(ctx) {
             Sie haben jederzeit im Rahmen der geltenden gesetzlichen
             Bestimmungen das Recht auf unentgeltliche Auskunft über Ihre
             gespeicherten personenbezogenen Daten, Herkunft der Daten, deren
-            Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf
-            Berichtigung, Sperrung oder Löschung dieser Daten. Diesbezüglich und
-            auch zu weiteren Fragen zum Thema personenbezogene Daten können Sie
-            sich jederzeit über die im Impressum aufgeführten
+            Empfänger und den Zweck der Daten&shy;verarbeitung und ggf. ein
+            Recht auf Berichtigung, Sperrung oder Löschung dieser Daten.
+            Diesbezüglich und auch zu weiteren Fragen zum Thema personenbezogene
+            Daten können Sie sich jederzeit über die im Impressum aufgeführten
             Kontaktmöglichkeiten an uns wenden.
           </p>
 
-          <h2>SSL- bzw. TLS-Verschlüsselung</h2>
+          <h2>SSL- bzw. TLS-Verschlüs&shy;selung</h2>
 
           <p>
-            Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher
-            Inhalte, die Sie an uns als Seitenbetreiber senden, nutzt unsere
-            Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind Daten, die Sie
-            über diese Website übermitteln, für Dritte nicht mitlesbar. Sie
-            erkennen eine verschlüsselte Verbindung an der „https://“
-            Adresszeile Ihres Browsers und am Schloss-Symbol in der
+            Aus Sicherheitsgründen und zum Schutz der Über&shy;tragung
+            vertraulicher Inhalte, die Sie an uns als Seitenbetreiber senden,
+            nutzt unsere Website eine SSL-bzw. TLS-Verschlüsselung. Damit sind
+            Daten, die Sie über diese Website übermitteln, für Dritte nicht
+            mitlesbar. Sie erkennen eine verschlüsselte Verbindung an der
+            „https://“ Adresszeile Ihres Browsers und am Schloss-Symbol in der
             Browserzeile.
           </p>
 
@@ -121,8 +126,8 @@ module.exports = async function impressum(ctx) {
 
           <p>
             Es findet keine Zusammenführung dieser Daten mit anderen
-            Datenquellen statt. Grundlage der Datenverarbeitung bildet Art. 6
-            Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung
+            Datenquellen statt. Grundlage der Daten&shy;verarbeitung bildet Art.
+            6 Abs. 1 lit. b DSGVO, der die Verarbeitung von Daten zur Erfüllung
             eines Vertrags oder vorvertraglicher Maßnahmen gestattet.
           </p>
 
@@ -173,14 +178,16 @@ module.exports = async function impressum(ctx) {
             mitsamt anschließender Verarbeitung durch Google unterbinden. Dies
             ist möglich, indem Sie das über folgenden Link erreichbare
             Browser-Plugin herunterladen und installieren:
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://tools.google.com/dlpage/gaoptout?hl=de"
-              >https://tools.google.com/dlpage/gaoptout</a
-            >.
           </p>
-          <p>Widerspruch gegen die Datenerfassung</p>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://tools.google.com/dlpage/gaoptout?hl=de"
+          >
+            https://tools.google.com/dlpage/gaoptout
+          </a>
+
+          <p>Widerspruch gegen die Daten&shy;erfassung</p>
           <p>
             Sie können die Erfassung Ihrer Daten durch Google Analytics
             verhindern, indem Sie auf folgenden Link klicken. Es wird ein
@@ -191,13 +198,15 @@ module.exports = async function impressum(ctx) {
           <p>
             Einzelheiten zum Umgang mit Nutzerdaten bei Google Analytics finden
             Sie in der Datenschutzerklärung von Google:
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://support.google.com/analytics/answer/6004245?hl=de"
-              >https://support.google.com/analytics/answer/6004245</a
-            >.
           </p>
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://support.google.com/analytics/answer/6004245?hl=de"
+          >
+            https://support.google.com/analytics/answer/6004245
+          </a>
+
           <p>Auftragsverarbeitung</p>
           <p>
             Zur vollständigen Erfüllung der gesetzlichen Datenschutzvorgaben
@@ -235,7 +244,7 @@ module.exports = async function impressum(ctx) {
             Sie bei uns besucht haben. Der Einsatz von Google Web Fonts erfolgt
             auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Als Betreiber dieser
             Website haben wir ein berechtigtes Interesse an der optimalen
-            Darstellung und Übertragung unseres Webauftritts.
+            Darstellung und Über&shy;tragung unseres Webauftritts.
           </p>
           <p>
             Das Unternehmen Google ist für das us-europäische
@@ -245,21 +254,28 @@ module.exports = async function impressum(ctx) {
           </p>
           <p>
             Einzelheiten über Google Web Fonts finden Sie unter:
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://fonts.google.com/about"
-            >
-              https://fonts.google.com/about
-            </a>
-            und weitere Informationen in den Datenschutzbestimmungen von Google:
-            <a
-              rel="noopener"
-              target="_blank"
-              href="https://policies.google.com/technologies/partner-sites?hl=de"
-              >https://policies.google.com/technologies/partner-sites</a
-            >.
           </p>
+
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://fonts.google.com/about"
+          >
+            https://fonts.google.com/about
+          </a>
+
+          <p>
+            und weitere Informationen in den Datenschutzbestimmungen von Google:
+          </p>
+
+          <a
+            rel="noopener"
+            target="_blank"
+            href="https://policies.google.com/technologies/partner-sites?hl=de"
+          >
+            https://policies.google.com/technologies/partner-sites
+          </a>
+
           <p>
             <small>
               Quelle: Datenschutz-Konfigurator von

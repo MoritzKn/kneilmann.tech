@@ -47,3 +47,24 @@ $font-family__title: "Quicksand", sans-serif;
   font-size: 16px;
   line-height: 19px;
 }
+
+@mixin text-style__h1 {
+  font-family: $font-family__title;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+@mixin text-style__h2 {
+  font-family: $font-family__title;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+@mixin text-style__h3 {
+  font-family: $font-family__title;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+}

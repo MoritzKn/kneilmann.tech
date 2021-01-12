@@ -3,6 +3,7 @@
 body {
   margin: $base-space * 2;
   max-width: $content-width;
+  font-family: $font-family__text, sans-serif;
 
   @media screen and (min-width: $breakpoint__720) {
     margin: $base-space * 4 $base-space * 6;
@@ -11,6 +12,12 @@ body {
   @media screen and (min-width: $breakpoint__1600) {
     margin: $base-space * 8 $base-space * 10;
   }
+
+  @media screen and (min-width: $breakpoint__1920) {
+    margin: $base-space * 14 auto;
+  }
+
+  overflow-wrap: anywhere;
 }
 
 main {
@@ -52,12 +59,16 @@ a {
   color: #11f;
 }
 
+h1 {
+  @include text-style__h1;
+}
+
 h2 {
-  font-size: 1.3em;
+  @include text-style__h2;
 }
 
 h3 {
-  font-size: 1.1em;
+  @include text-style__h3;
 }
 
 ul,

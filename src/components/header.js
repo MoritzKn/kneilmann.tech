@@ -5,14 +5,17 @@ module.exports = async function header(ctx) {
 
   return html`
     <header class="header">
-      <h1 class="header__title"><a href="/">kneilmann.tech</a></h1>
+      ${ctx.state.path === "/"
+        ? html`
+            <h1 class="header__title"><a href="/">kneilmann.tech</a></h1>
+          `
+        : html`
+            <div class="header__title"><a href="/">kneilmann.tech</a></div>
 
-      ${ctx.state.path !== "/" &&
-        html`
-          <nav class="header__nav">
-            <a href="/">⭠ Back Home</a>
-          </nav>
-        `}
+            <nav class="header__nav">
+              <a href="/">⭠ Back Home</a>
+            </nav>
+          `}
     </header>
   `;
 };
