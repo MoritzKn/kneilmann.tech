@@ -1,6 +1,8 @@
 @import "src/definitions.scss";
 
 .footer {
+  @include text-style__copy;
+
   &::before {
     content: "--";
     display: block;
