@@ -29,8 +29,6 @@ class GoogleFontLoader {
 
     const url = `https://fonts.googleapis.com/css2?${query}&display=swap`;
 
-    console.log("fetch url", url);
-
     const res = await fetch(url, {
       // Jup, Google Fonts sniffs the UA
       // This just gives us woff
@@ -45,8 +43,6 @@ class GoogleFontLoader {
 
     const responseBody = await res.text();
 
-    console.log(responseBody);
-
     // Pls don't sue me
     const onlyLatain = responseBody
       .split("/* ")
@@ -54,8 +50,6 @@ class GoogleFontLoader {
       .filter(([name]) => name === "latin")
       .map(([, entry]) => entry)
       .join();
-
-    console.log(onlyLatain);
 
     // NOTE: csso destroys the font def
     // const optimizedCss = csso.minify(onlyLatain).css;
