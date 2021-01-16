@@ -3,7 +3,7 @@ $base-space__m: $base-space * 2;
 $base-space__l: $base-space * 3;
 $base-space__xl: $base-space * 4;
 
-$block-margin: 16px;
+$block-margin: 14px;
 
 $breakpoint__321: 321px;
 $breakpoint__520: 520px;
@@ -14,57 +14,50 @@ $breakpoint__1920: 1920px;
 
 $content-width: 1200px;
 
-$font-family__text: "Raleway", sans-serif;
-$font-family__title: "Quicksand", sans-serif;
+$font-family__main: "Quicksand", sans-serif;
 
 @mixin text-style__title {
-  font-family: $font-family__title;
   font-weight: 300;
   font-size: 32px;
   line-height: 35px;
 
-  @media screen and (min-width: $breakpoint__720) {
+  @media (min-width: $breakpoint__720) {
     font-size: 52px;
     line-height: 60px;
   }
 
-  @media screen and (min-width: $breakpoint__1600) {
+  @media (min-width: $breakpoint__1600) {
     font-size: 65px;
     line-height: 74px;
   }
 }
 
 @mixin text-style__copy {
-  font-family: $font-family__text;
   font-weight: 300;
   font-size: 19px;
   line-height: 26px;
 }
 
 @mixin text-style__main-text {
-  font-family: $font-family__text;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
 }
 
 @mixin text-style__h1 {
-  font-family: $font-family__title;
   font-weight: bold;
   font-size: 32px;
-  line-height: 38px;
+  line-height: 37px;
 }
 
 @mixin text-style__h2 {
-  font-family: $font-family__title;
   font-weight: bold;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 25px;
 }
 
 @mixin text-style__h3 {
-  font-family: $font-family__title;
   font-weight: bold;
   font-size: 17px;
-  line-height: 20px;
+  line-height: 19px;
 }

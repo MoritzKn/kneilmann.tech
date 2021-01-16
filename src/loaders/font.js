@@ -55,7 +55,8 @@ class GoogleFontLoader {
     // const optimizedCss = csso.minify(onlyLatain).css;
     // console.log(optimizedCss);
 
-    ctx.headInsert += `<style>${onlyLatain}</style>\n`;
+    // Font should have higher prop than other stuff so that the browser can start fetching the woff
+    ctx.headInsert = `<style>${onlyLatain}</style>\n${ctx.headInsert}`;
   }
 }
 

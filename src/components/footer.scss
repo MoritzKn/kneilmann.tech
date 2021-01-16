@@ -1,21 +1,12 @@
 @import "src/definitions.scss";
 
-.footer {
-  @include text-style__copy;
-
-  &::before {
-    content: "--";
-    display: block;
-  }
+.footer::before {
+  content: "--";
+  display: block;
 }
 
 .footer__nav {
   margin: $block-margin 0;
-}
-
-.footer__list {
-  margin: 0;
-  padding: 0;
 }
 
 .footer__item {

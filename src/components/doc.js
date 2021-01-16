@@ -8,16 +8,15 @@ module.exports = async function doc(ctx, props, slot) {
     width: 128
   });
 
-  await ctx.load("font", __dirname, "Raleway", { weights: [400, 700] });
+  // await ctx.load("font", __dirname, "Raleway", { weights: [400, 700] });
   await ctx.load("font", __dirname, "Quicksand", { weights: [400, 700] });
 
   return html`
     <!DOCTYPE html>
     <html lang="en">
       <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>${props.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         ${props.description &&
           html`
@@ -32,11 +31,11 @@ module.exports = async function doc(ctx, props, slot) {
             <meta property="og:image" content="${URL_ORIGIN}${props.ogImage}" />
           `}
 
-        <link href="${URL_ORIGIN}${ctx.state.path}" rel="canonical" />
+        <link rel="canonical" href="${URL_ORIGIN}${ctx.state.path}" />
 
         <link rel="icon" href="${icon.path}" />
 
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <!-- HEAD_INSERT_POINT -->
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script
@@ -44,15 +43,13 @@ module.exports = async function doc(ctx, props, slot) {
           src="https://www.googletagmanager.com/gtag/js?id=G-FKW0VX8ESD"
         ></script>
         <script>
-          window.dataLayer = window.dataLayer || [];
+          dataLayer = [];
           function gtag() {
             dataLayer.push(arguments);
           }
           gtag("js", new Date());
           gtag("config", "G-FKW0VX8ESD", { anonymize_ip: true });
         </script>
-
-        <!-- HEAD_INSERT_POINT -->
       </head>
       <body>
         ${slot}
