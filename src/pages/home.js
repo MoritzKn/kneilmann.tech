@@ -8,9 +8,9 @@ module.exports = async function about(ctx) {
   return doc(
     ctx,
     {
-      title: "Moritz Kneilmann — Freelance Cloud and Web Consultant",
+      title: "Moritz Kneilmann – Freelance Cloud and Web Consultant",
       description:
-        "Freelance Cloud and Web Consultant from Cologne, Germany. Interested in: Performance, DevOps, Terraform, Docker, AWS, Node.js"
+        "Freelance Cloud and Web Consultant from Cologne, Germany. Topics: Terraform, AWS, DevOps, Docker, Performance, Node.js, JavaScript"
     },
     html`
       ${header(ctx)}
