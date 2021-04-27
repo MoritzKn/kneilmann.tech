@@ -18,8 +18,9 @@ module.exports = async function impressum(ctx) {
         <h1>Impressum</h1>
 
         <h2>Angaben gemäß § 5 TMG</h2>
+
         <p>
-          Moritz Kneilmann<br />
+          Moritz Kneilmann – Cloud and Web Consulting<br />
           Marienstraße 13<br />
           50825 Köln
         </p>

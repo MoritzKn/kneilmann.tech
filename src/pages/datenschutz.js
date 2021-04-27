@@ -25,8 +25,9 @@ module.exports = async function impressum(ctx) {
           Die verantwortliche Stelle für die Daten&shy;verarbeitung auf dieser
           Website ist:
         </p>
+
         <p>
-          Moritz Kneilmann<br />
+          Moritz Kneilmann – Cloud and Web Consulting<br />
           Marienstraße 13<br />
           50825 Köln
         </p>

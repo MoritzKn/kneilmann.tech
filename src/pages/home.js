@@ -10,7 +10,7 @@ module.exports = async function about(ctx) {
     {
       title: "Moritz Kneilmann – Freelance Cloud and Web Consultant",
       description:
-        "Freelance Cloud and Web Consultant from Cologne, Germany. Topics: Terraform, AWS, DevOps, Docker, Performance, Node.js, JavaScript"
+        "Freelance Cloud and Web Consultant from Cologne, Germany. Topics: Terraform, AWS, DevOps, Kubernetes, Docker, Performance, Node.js, JavaScript"
     },
     html`
       ${header(ctx)}
@@ -19,7 +19,7 @@ module.exports = async function about(ctx) {
         <h2>Hi there!</h2>
 
         <p>
-          My name is <strong>Moritz Kneilmann</strong>, and I am a
+          My name is <strong>Moritz Kneilmann,</strong> and I am a
           <strong>Freelance Cloud and Web Consultant</strong> from Cologne,
           Germany.
         </p>
@@ -43,6 +43,7 @@ module.exports = async function about(ctx) {
         <ul>
           <li>Terraform</li>
           <li>AWS</li>
+          <li>Kubernetes</li>
           <li>Docker</li>
           <li>GitLab</li>
           <li>Node.js</li>
